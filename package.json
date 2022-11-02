@@ -1,0 +1,17 @@
+{
+	"name": "personal_website_v2",
+	"version": "1.0.0",
+	"description": "My Personal Website | Version 2.0",
+	"default": "index.html",
+	"scripts": {
+		"start": "parcel index.html",
+		"build": "parcel build index.html --dist-dir ./dist"
+	},
+	"author": "Georgios Antoniadis",
+	"license": "ISC",
+	"dependencies": {
+		"core-js": "^3.26.0",
+		"parcel": "^2.7.0",
+		"regenerator-runtime": "^0.13.10"
+	}
+}

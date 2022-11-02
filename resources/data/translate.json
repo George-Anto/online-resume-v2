@@ -1,0 +1,96 @@
+{
+	"translations": [
+		{
+			"greek": "Βιογραφικό Σημείωμα",
+			"english": "Curriculum Vitae"
+		},
+		{
+			"greek": "Γεώργιος Αντωνιάδης",
+			"english": "Georgios Antoniadis"
+		},
+		{
+			"greek": "Στοιχεία Επικοινωνίας",
+			"english": "Contact Info"
+		},
+		{
+			"greek": "Λήψη Βιογραφικού",
+			"english": "Download CV"
+		},
+		{
+			"greek": "Προσωπικές Πληροφορίες",
+			"english": "Personal Information"
+		},
+		{
+			"greek": "Διεύθυνση: Καποδιστρίου 26, Πειραιάς",
+			"english": "Address: 26 Kapodistriou, Piraeus"
+		},
+		{
+			"greek": "Ημερομηνία Γέννησης: 20/03/1996",
+			"english": "Date of Birth: 20/03/1996"
+		},
+		{
+			"greek": "Στρατιωτικές Υποχρεώσεις: Εκπληρωμένες",
+			"english": "Military Obligations: Fulfilled"
+		},
+		{
+			"greek": "Με λίγα λόγια...",
+			"english": "In a few words..."
+		},
+		{
+			"greek": "Junior προγραμματιστής, μεταπτυχιακός φοιτητής στην κατεύθυνση \"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\" του τμήματος Πληροφορικής του ΠαΠει, με ιδιαίτερο ενδιαφέρον για τις εξελίξεις στην τεχνολογική πρόοδο, τις εδραιομένες αλλά και τις ανερχόμενες τεχνικές σχεδίασης και υλοποίησης έργων λογισμκού. Στα πρώτα μου βήματα επιθυμώ να εξελίξω τις γνώσεις μου και τις ικανότητες μου στην δημιουργία ολοκληρωμένων web applications με ομαδική δουλειά και συνεργασία όπως και στην κατασκευή προγραμμάτων με γνώμονα καλές πρακτικές και πρότυπα σχεδίασης.",
+			"english": "Junior programmer, postgraduate student in the field of \"Advanced Software Development Technologies\" in the department of Computer Science of UoP, with particular interest for the developments in technological progress, the established but also the emerging techniques for designing and implementing software projects. In my first steps i desire to upgrade my knowledge and abilities to  create complete web applications with teamwork and collaboration as well as programming based on good practices and design patterns."
+		},
+		{
+			"greek": "Εκπαίδευση",
+			"english": "Education"
+		},
+		{
+			"greek": "2021 - παρόν: Μεταπτυχιακός φοιτητής (MSc) \"Προηγμένα Συστήματα Πληροφορικής - Ανάπτυξη Λογισμικού και Τεχνητής Νοημοσύνης, Κατεύθυνση: Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\", Πανεπιστήμιο Πειραιά",
+			"english": "2021 - present: Postgraduate student (MSc) \"Advanced Information Systems - Software Development and Artificial Intelligence, Field: Advanced Software Development Technologies\", University of Piraeus"
+		},
+		{
+			"greek": "2014 - 2020: Πτυχίο (BSc) \"Εφαρμοσμένη Πληροφορική\", Πανεπιστήμιο Μακεδονίας",
+			"english": "2014 - 2020: Bachelor's Degree (BSc) \"Applied Informatics\", University of Macedonia"
+		},
+		{
+			"greek": "Ξένες Γλώσσες",
+			"english": "Foreign Languages"
+		},
+		{
+			"greek": "Αγγλικά: Michigan Proficiency - ECPE (C2)",
+			"english": "English: Michigan Proficiency - ECPE (C2)"
+		},
+		{
+			"greek": "Γερμανικά: Goethe - Zertifikat (B1)",
+			"english": "German: Goethe - Zertifikat (B1)"
+		},
+		{
+			"greek": "Γνώσεις - Δεξιότητες",
+			"english": "Knowledge - Skills"
+		},
+		{
+			"greek": "Εργασιακή Εμπειρία",
+			"english": "Work Experience"
+		},
+		{
+			"greek": "2021 (Ιούλιος - Αύγουστος): Πρακτική - Summer Camp στην εταιρία OTS, Θεσσαλονίκη",
+			"english": "2021 (July - August): Internship - Summer Camp at OTS, Thessaloniki"
+		},
+		{
+			"greek": "Πιστοποιητικό Συμμετοχής",
+			"english": "Certificate of Participation"
+		},
+		{
+			"greek": "Μπορείτε να επικοινωνήσετε μαζί μου με τους ακόλουθους τρόπους:",
+			"english": "You can contact me in the following ways:"
+		},
+		{
+			"greek": "Κινητό Τηλέφωνο: 6986662282",
+			"english": "Mobile Phone: 6986662282"
+		},
+		{
+			"greek": "Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.",
+			"english": "The electronic copy of the CV that will be available for download has not been completed yet."
+		}
+	]
+}
