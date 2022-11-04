@@ -1,36 +1,68 @@
 {
 	"translations": [
 		{
-			"greek": "Βιογραφικό Σημείωμα",
-			"english": "Curriculum Vitae"
+			"greek": "Σχετικά με Εμένα",
+			"english": "About Me"
 		},
 		{
-			"greek": "Γεώργιος Αντωνιάδης",
+			"greek": "Εκπαίδευση",
+			"english": "Education"
+		},
+		{
+			"greek": "Εργασιακή Εμπειρία",
+			"english": "Work Experience"
+		},
+		{
+			"greek": "Projects",
+			"english": "Projects"
+		},
+		{
+			"greek": "Γνώσεις - Δεξιότητες",
+			"english": "Knowledge - Skills"
+		},
+		{
+			"greek": "Επικοινωνία",
+			"english": "Contact Me"
+		},
+		{
+			"greek": "Γεωργιος Αντωνιαδης",
 			"english": "Georgios Antoniadis"
-		},
-		{
-			"greek": "Στοιχεία Επικοινωνίας",
-			"english": "Contact Info"
 		},
 		{
 			"greek": "Λήψη Βιογραφικού",
 			"english": "Download CV"
 		},
 		{
+			"greek": "Σχετικά με Εμένα",
+			"english": "About Me"
+		},
+		{
 			"greek": "Προσωπικές Πληροφορίες",
 			"english": "Personal Information"
 		},
 		{
-			"greek": "Διεύθυνση: Καποδιστρίου 26, Πειραιάς",
-			"english": "Address: 26 Kapodistriou, Piraeus"
+			"greek": "Πόλη Κατοικίας: ",
+			"english": "Residence City: "
 		},
 		{
-			"greek": "Ημερομηνία Γέννησης: 20/03/1996",
-			"english": "Date of Birth: 20/03/1996"
+			"greek": "Θεσσαλονίκη",
+			"english": "Thessaloniki"
 		},
 		{
-			"greek": "Στρατιωτικές Υποχρεώσεις: Εκπληρωμένες",
-			"english": "Military Obligations: Fulfilled"
+			"greek": "Τηλέφωνο: ",
+			"english": "Phone Number: "
+		},
+		{
+			"greek": "Ημερομηνία Γέννησης: ",
+			"english": "Date of Birth: "
+		},
+		{
+			"greek": "Στρατιωτικές Υποχρεώσεις:  ",
+			"english": "Military Service: "
+		},
+		{
+			"greek": "Εκπληρωμένες",
+			"english": "Fulfilled"
 		},
 		{
 			"greek": "Με λίγα λόγια...",
@@ -45,12 +77,32 @@
 			"english": "Education"
 		},
 		{
-			"greek": "2021 - παρόν: Μεταπτυχιακός φοιτητής (MSc) \"Προηγμένα Συστήματα Πληροφορικής - Ανάπτυξη Λογισμικού και Τεχνητής Νοημοσύνης, Κατεύθυνση: Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\", Πανεπιστήμιο Πειραιά",
-			"english": "2021 - present: Postgraduate student (MSc) \"Advanced Information Systems - Software Development and Artificial Intelligence, Field: Advanced Software Development Technologies\", University of Piraeus"
+			"greek": "Πανεπιστήμιο Πειραιώς",
+			"english": "University of Pireaus"
 		},
 		{
-			"greek": "2014 - 2020: Πτυχίο (BSc) \"Εφαρμοσμένη Πληροφορική\", Πανεπιστήμιο Μακεδονίας",
-			"english": "2014 - 2020: Bachelor's Degree (BSc) \"Applied Informatics\", University of Macedonia"
+			"greek": "Νοέμβριος 2021 - Παρόν",
+			"english": "November 2021 - Present"
+		},
+		{
+			"greek": "Μεταπτυχιακό (MSc) Τμήματος \"Προηγμένων Συστήματων Πληροφορικής - Ανάπτυξης Λογισμικού και Τεχνητής Νοημοσύνης\"",
+			"english": "Master in (MSc) \"Advanced Information Systems - Software Development and Artificial Intelligence\""
+		},
+		{
+			"greek": "Κατεύθυνση: \"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\"",
+			"english": "Field: Advanced Software Development Technologies"
+		},
+		{
+			"greek": "Πανεπιστήμιο Μακεδονίας",
+			"english": "University of Macedonia"
+		},
+		{
+			"greek": "Σεπτέμβριος 2014 - Ιούλιος 2020",
+			"english": "September 2014 - July 2020"
+		},
+		{
+			"greek": "Πτυχίο (BSc) Τμήματος \"Εφαρμοσμένης Πληροφορικής\"",
+			"english": "Undergraduate degree (BSc) of \"Applied Informatics\" Department"
 		},
 		{
 			"greek": "Ξένες Γλώσσες",
@@ -65,32 +117,80 @@
 			"english": "German: Goethe - Zertifikat (B1)"
 		},
 		{
-			"greek": "Γνώσεις - Δεξιότητες",
-			"english": "Knowledge - Skills"
-		},
-		{
 			"greek": "Εργασιακή Εμπειρία",
 			"english": "Work Experience"
 		},
 		{
-			"greek": "2021 (Ιούλιος - Αύγουστος): Πρακτική - Summer Camp στην εταιρία OTS, Θεσσαλονίκη",
-			"english": "2021 (July - August): Internship - Summer Camp at OTS, Thessaloniki"
+			"greek": "Πρακτική - Summer Camp",
+			"english": "Internship - Summer Camp"
 		},
 		{
 			"greek": "Πιστοποιητικό Συμμετοχής",
 			"english": "Certificate of Participation"
 		},
 		{
-			"greek": "Μπορείτε να επικοινωνήσετε μαζί μου με τους ακόλουθους τρόπους:",
-			"english": "You can contact me in the following ways:"
+			"greek": "Σύστημα Διαχείρισης Κινηματογράφων και Ταινιών",
+			"english": "Cinemas and Films Management System"
 		},
 		{
-			"greek": "Κινητό Τηλέφωνο: 6986662282",
-			"english": "Mobile Phone: 6986662282"
+			"greek": "Με εξατομικευμένη εμπειρία χρήσης",
+			"english": "With personalized user experience"
 		},
 		{
-			"greek": "Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.",
-			"english": "The electronic copy of the CV that will be available for download has not been completed yet."
+			"greek": "Full stack application για την διαχείριση κινηματογράφων και ταινιών αλλά και λειτουργίες εύρεσης ταινιών και κράτησης εισιτηρίων από τους χρήστες. Με την συλλογή πληροφοριών από τους χρήστες, γίνονται επίσης και εξατομικευμένες προτάσεις ταινιών και κινηματογραφικών αιθουσών.",
+			"english": "Full stack application for the management of cinemas and movies as well as function for finding movies and booking tickets by the users. By collecting information from users, we also make personalized movie and cinema halls recommendations."
+		},
+		{
+			"greek": "Περισσότερα θα βρείτε στα links.",
+			"english": "You will find more details in the links."
+		},
+		{
+			"greek": "Δείτε το στο GitHub (Frontend - Angular)",
+			"english": "View project on GitHub (Frontend - Angular)"
+		},
+		{
+			"greek": "Δείτε το στο GitHub (Backend - NodeJS)",
+			"english": "View project on GitHub (Backend - NodeJS)"
+		},
+		{
+			"greek": "Android App με Backend Module",
+			"english": "Android App with Backend Module"
+		},
+		{
+			"greek": "Η εφαρμογή έχει τον ρόλο της ειδοποίησης χρηστών που την έχουν εγκαταστήσει για επικίνδυνες  - έκτακτες καταστάσεις (φωτιές πλημμύρες, σεισμούς) κοντά σε αυτούς. Ο χρήστης έχει την δυνατότητα και να ειδοποιήσει για ένα επικίνδυνο περιστατικό αλλά και να ειδοποιηθεί. Η αξιολόγηση των περιστατικών γίνεται από το backend module μας.",
+			"english": "The application has the role of notifying users who have installed it about dangerous - emergency situations (fires, floods, earthquakes) near them. The user has the ability to notify about a dangerous incident and also to be notified. Incidents are evaluated by our backend module."
+		},
+		{
+			"greek": "Περισσότερα θα βρείτε στα links.",
+			"english": "You will find more details in the links."
+		},
+		{
+			"greek": "Δείτε το στο GitHub (Android App)",
+			"english": "View project on GitHub (Android App)"
+		},
+		{
+			"greek": "Δείτε το στο GitHub (Backend - NodeJS)",
+			"english": "View project on GitHub (Backend - NodeJS)"
+		},
+		{
+			"greek": "Παρουσίαση Παγκόσμιων Δεδομένων για Covid-19",
+			"english": "Presentation of Global Data on Covid-19"
+		},
+		{
+			"greek": "Απλή Java με χρήση τρίτου API και τεχνικές πολυνηματικού προγραμματισμού",
+			"english": "Plain Java using a third-party API and multi-threaded programming techniques"
+		},
+		{
+			"greek": "Εφαρμογή κονσόλας σε Java η οποία διαχειρίζεται δεδομένα Covid-19 για όλες τις χώρες του κόσμου και τα καταγράφει σε ένα blockchain με την χρήση παράλληλων τεχνικών προγραμματισμού.",
+			"english": "Java console application that manages Covid-19 data for all countries of the world and records it in a blockchain using parallel programming techniques."
+		},
+		{
+			"greek": "Περισσότερα θα βρείτε στο link.",
+			"english": "You will find more details in the link."
+		},
+		{
+			"greek": "Δείτε το στο GitHub",
+			"english": "View project on GitHub"
 		}
 	]
 }

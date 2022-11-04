@@ -1,4 +1,4 @@
-body {
+body, body span {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -541,6 +541,7 @@ footer {
 
 .project {
   max-width: 900px;
+  min-height: 27rem;
   background: #fff;
   border-radius: 4px;
   margin: 0 auto 30px;
@@ -562,8 +563,15 @@ footer {
 
 .project-info h3 {
   color: #374054;
-  margin: 0 0 15px;
+  margin: 0 0 5px;
   font-size: 1.5em;
+  font-weight: 300;
+}
+
+.project-info h4 {
+  color: #374054;
+  margin: 0 0 5px;
+  font-size: 1em;
   font-weight: 300;
 }
 
@@ -669,20 +677,26 @@ footer {
   resize: none;
 }
 
+#contact-form-button-div {
+  display: flexbox;
+}
+
 #contact-form button {
-  width: 100%;
+  width: 40%;
   color: #3498db;
   background: #fff;
   border: none;
   border-radius: 4px;
+  align-items: center;
   padding: 5px 10px;
   font-weight: 700;
   transition: all .5s;
-  display: block;
   box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
 }
 
 #contact-form button:hover {
+  color: #d4d8db;
+  background-color: #0c2535;
   box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
@@ -887,8 +901,10 @@ footer {
 
 .translate-btn {
   width: 10rem;
-  color: #999288;
-  background-color: #eee;
+  height: 3.5rem;
+  color: #d4d8db;
+  background: none;
+  border: none;
   font-size: 20px;
   text-decoration: none;
 }
@@ -896,11 +912,14 @@ footer {
 .translate-btn:hover {
   color: #d4d8db;
   background-color: #0c2535;
+  border-color: #0c2535;
   font-weight: bold;
 }
 
 .tr-btn-selected {
-  color: #444;
+  background-color: #0c2535;
+  border-color: #0c2535;
+  border-radius: 5%;
 }
 
 /*# sourceMappingURL=index.748ad148.css.map */
