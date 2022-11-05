@@ -86,7 +86,7 @@
 		},
 		{
 			"greek": "Μεταπτυχιακό (MSc) Τμήματος \"Προηγμένων Συστήματων Πληροφορικής - Ανάπτυξης Λογισμικού και Τεχνητής Νοημοσύνης\"",
-			"english": "Master in (MSc) \"Advanced Information Systems - Software Development and Artificial Intelligence\""
+			"english": "Master (MSc) in \"Advanced Information Systems - Software Development and Artificial Intelligence\""
 		},
 		{
 			"greek": "Κατεύθυνση: \"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\"",
@@ -119,6 +119,10 @@
 		{
 			"greek": "Εργασιακή Εμπειρία",
 			"english": "Work Experience"
+		},
+		{
+			"greek": "OTS, Θεσσαλονίκη",
+			"english": "OTS, Thessaloniki"
 		},
 		{
 			"greek": "Πρακτική - Summer Camp",
@@ -191,6 +195,34 @@
 		{
 			"greek": "Δείτε το στο GitHub",
 			"english": "View project on GitHub"
+		},
+		{
+			"greek": "Γνώσεις - Δεξιότητες",
+			"english": "Knowledge - Skills"
+		},
+		{
+			"greek": "Συμπεριλαμβανομένων Πιστοποιήσεων των",
+			"english": "Including Certifications of"
+		},
+		{
+			"greek": "και",
+			"english": "and"
+		},
+		{
+			"greek": "Επικοινωνήστε μαζί μου",
+			"english": "Contact me"
+		},
+		{
+			"greek": "Αποστολή",
+			"english": "Send"
+		},
+		{
+			"greek": "Κλεισιμο",
+			"english": "Close"
+		},
+		{
+			"greek": "Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.",
+			"english": "The electronic copy of the CV that will be available for download has not been completed yet."
 		}
 	]
 }

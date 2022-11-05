@@ -535,18 +535,24 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _webImmediateJs = require("core-js/modules/web.immediate.js");
 var _runtime = require("regenerator-runtime/runtime");
+//Load the translation data
 var _translateJson = require("../resources/data/translate.json");
 var _translateJsonDefault = parcelHelpers.interopDefault(_translateJson);
-// const btnDownloadCV = document.querySelector(".downloadCV");
+var _placeholderTranslateJson = require("../resources/data/placeholder-translate.json");
+var _placeholderTranslateJsonDefault = parcelHelpers.interopDefault(_placeholderTranslateJson);
+//Download cv button
+const btnDownloadCV = document.querySelector("#tr-download-cv");
+//Translation buttons
 const btnGreek = document.querySelector(".btn-greek");
 const btnEnglish = document.querySelector(".btn-english");
-// const experienceDateDiv = document.querySelector("#tr-experience-date");
+//Arrays to store the DOM elements that will be traslated
 const elementsForTranslation = [];
+const elementsForPlaceholderTranslation = [];
 //Helper function
 const selectEl = function(DOMEl) {
     return document.querySelector(DOMEl);
 };
-//DOM elemtents for translation
+//DOM elemtents for translation are pushed in the corresponding arrays
 elementsForTranslation.push(selectEl("#tr-menu-item-1"));
 elementsForTranslation.push(selectEl("#tr-menu-item-2"));
 elementsForTranslation.push(selectEl("#tr-menu-item-3"));
@@ -579,6 +585,7 @@ elementsForTranslation.push(selectEl("#tr-education-11"));
 elementsForTranslation.push(selectEl("#tr-experience-1"));
 elementsForTranslation.push(selectEl("#tr-experience-2"));
 elementsForTranslation.push(selectEl("#tr-experience-3"));
+elementsForTranslation.push(selectEl("#tr-experience-4"));
 elementsForTranslation.push(selectEl("#tr-projects-1"));
 elementsForTranslation.push(selectEl("#tr-projects-2"));
 elementsForTranslation.push(selectEl("#tr-projects-3"));
@@ -595,30 +602,40 @@ elementsForTranslation.push(selectEl("#tr-projects-13"));
 elementsForTranslation.push(selectEl("#tr-projects-14"));
 elementsForTranslation.push(selectEl("#tr-projects-15"));
 elementsForTranslation.push(selectEl("#tr-projects-16"));
-console.log(elementsForTranslation);
+elementsForTranslation.push(selectEl("#tr-skills-1"));
+elementsForTranslation.push(selectEl("#tr-skills-2"));
+elementsForTranslation.push(selectEl("#tr-skills-3"));
+elementsForTranslation.push(selectEl("#tr-contact-1"));
+elementsForTranslation.push(selectEl("#tr-contact-2"));
+elementsForTranslation.push(selectEl("#tr-close"));
+elementsForPlaceholderTranslation.push(selectEl("#tr-contact-placeholder-1"));
+elementsForPlaceholderTranslation.push(selectEl("#tr-contact-placeholder-2"));
+//Boolean variable to indicate the language that is displayed
 let isGreek = true;
+//Function to alter the innerHTML (and placeholder) attribute of the
+//selected DOM elements so the translation is implemented
 const translateTo = async function(language) {
     try {
-        // const translationObj = await fetchTranslations();
         elementsForTranslation.forEach((elementForTranslation, index)=>elementForTranslation.innerHTML = (0, _translateJsonDefault.default).translations[index][language]);
+        elementsForPlaceholderTranslation.forEach((elementForTranslation, index)=>elementForTranslation.placeholder = (0, _placeholderTranslateJsonDefault.default).translations[index][language]);
     } catch (err) {
         console.error(err);
     }
 };
-// const pdfCVNotReady = async function () {
-// 	try {
-// 		const translationObj = await fetchTranslations();
-// 		alert(
-// 			translationObj.translations[translationObj.translations.length - 1][isGreek ? "greek" : "english"]
-// 		);
-// 	} catch (err) {
-// 		console.error(err);
-// 	}
-// };
-// btnDownloadCV.addEventListener("click", function () {
-// 	this.blur();
-// 	pdfCVNotReady();
-// });
+//Function to display the message that the cv is not yet ready
+const pdfCVNotReady = async function() {
+    try {
+        alert((0, _translateJsonDefault.default).translations[(0, _translateJsonDefault.default).translations.length - 1][isGreek ? "greek" : "english"]);
+    } catch (err) {
+        console.error(err);
+    }
+};
+//Listener for the download cv button
+btnDownloadCV.addEventListener("click", function() {
+    this.blur();
+    pdfCVNotReady();
+});
+//Function to implement the greek translation
 const greekTranslation = function() {
     this.blur();
     if (isGreek) return;
@@ -626,18 +643,8 @@ const greekTranslation = function() {
     isGreek = true;
     btnGreek.classList.toggle("tr-btn-selected");
     btnEnglish.classList.toggle("tr-btn-selected");
-// console.log(experienceDateDiv.attributes);
-// experienceDateDiv.setAttribute("data-date", "Ιούλιος 2021 – Αύγουστος 2021");
-// $this.find(".vtimeline-content").each(function () {
-// 	var date = $(this).data("date");
-// 	if (date) {
-// 		// Prepend if exists
-// 		$(this)
-// 			.parent()
-// 			.prepend('<span class="vtimeline-date">' + date + "</span>");
-// 	}
-// });
 };
+//Function to implement the english translation
 const englishTranslation = function() {
     this.blur();
     if (!isGreek) return;
@@ -645,28 +652,23 @@ const englishTranslation = function() {
     isGreek = false;
     btnEnglish.classList.toggle("tr-btn-selected");
     btnGreek.classList.toggle("tr-btn-selected");
-// console.log(experienceDateDiv.attributes);
-// experienceDateDiv.setAttribute("data-date", "July 2021 – August 2021");
-// $this.find(".vtimeline-content").each(function () {
-// 	var date = $(this).data("date");
-// 	if (date) {
-// 		// Prepend if exists
-// 		$(this)
-// 			.parent()
-// 			.prepend('<span class="vtimeline-date">' + date + "</span>");
-// 	}
-// });
 };
+//Liteners for the translation buttons
 btnGreek.addEventListener("click", greekTranslation);
-document.addEventListener("keydown", (keyEventObj)=>{
-    if (keyEventObj.key == "g" || keyEventObj.key == "ε") greekTranslation();
-});
 btnEnglish.addEventListener("click", englishTranslation);
+//Listner for the esc button in keyboard
+//Toggles the language displayed
 document.addEventListener("keydown", (keyEventObj)=>{
-    if (keyEventObj.key == "e" || keyEventObj.key == "α") englishTranslation();
+    if (keyEventObj.key === "Escape") {
+        if (isGreek) {
+            englishTranslation();
+            return;
+        }
+        greekTranslation();
+    }
 });
 
-},{"core-js/modules/web.immediate.js":"49tUX","regenerator-runtime/runtime":"dXNgZ","../resources/data/translate.json":"coRrV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"49tUX":[function(require,module,exports) {
+},{"core-js/modules/web.immediate.js":"49tUX","regenerator-runtime/runtime":"dXNgZ","../resources/data/translate.json":"coRrV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../resources/data/placeholder-translate.json":"lpOXM"}],"49tUX":[function(require,module,exports) {
 // TODO: Remove this module from `core-js@4` since it's split to modules listed below
 require("../modules/web.clear-immediate");
 require("../modules/web.set-immediate");
@@ -2374,7 +2376,7 @@ try {
 }
 
 },{}],"coRrV":[function(require,module,exports) {
-module.exports = JSON.parse('{"translations":[{"greek":"Σχετικά με Εμένα","english":"About Me"},{"greek":"Εκπαίδευση","english":"Education"},{"greek":"Εργασιακή Εμπειρία","english":"Work Experience"},{"greek":"Projects","english":"Projects"},{"greek":"Γνώσεις - Δεξιότητες","english":"Knowledge - Skills"},{"greek":"Επικοινωνία","english":"Contact Me"},{"greek":"Γεωργιος Αντωνιαδης","english":"Georgios Antoniadis"},{"greek":"Λήψη Βιογραφικού","english":"Download CV"},{"greek":"Σχετικά με Εμένα","english":"About Me"},{"greek":"Προσωπικές Πληροφορίες","english":"Personal Information"},{"greek":"Πόλη Κατοικίας: ","english":"Residence City: "},{"greek":"Θεσσαλονίκη","english":"Thessaloniki"},{"greek":"Τηλέφωνο: ","english":"Phone Number: "},{"greek":"Ημερομηνία Γέννησης: ","english":"Date of Birth: "},{"greek":"Στρατιωτικές Υποχρεώσεις:  ","english":"Military Service: "},{"greek":"Εκπληρωμένες","english":"Fulfilled"},{"greek":"Με λίγα λόγια...","english":"In a few words..."},{"greek":"Junior προγραμματιστής, μεταπτυχιακός φοιτητής στην κατεύθυνση \\"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\\" του τμήματος Πληροφορικής του ΠαΠει, με ιδιαίτερο ενδιαφέρον για τις εξελίξεις στην τεχνολογική πρόοδο, τις εδραιομένες αλλά και τις ανερχόμενες τεχνικές σχεδίασης και υλοποίησης έργων λογισμκού. Στα πρώτα μου βήματα επιθυμώ να εξελίξω τις γνώσεις μου και τις ικανότητες μου στην δημιουργία ολοκληρωμένων web applications με ομαδική δουλειά και συνεργασία όπως και στην κατασκευή προγραμμάτων με γνώμονα καλές πρακτικές και πρότυπα σχεδίασης.","english":"Junior programmer, postgraduate student in the field of \\"Advanced Software Development Technologies\\" in the department of Computer Science of UoP, with particular interest for the developments in technological progress, the established but also the emerging techniques for designing and implementing software projects. In my first steps i desire to upgrade my knowledge and abilities to  create complete web applications with teamwork and collaboration as well as programming based on good practices and design patterns."},{"greek":"Εκπαίδευση","english":"Education"},{"greek":"Πανεπιστήμιο Πειραιώς","english":"University of Pireaus"},{"greek":"Νοέμβριος 2021 - Παρόν","english":"November 2021 - Present"},{"greek":"Μεταπτυχιακό (MSc) Τμήματος \\"Προηγμένων Συστήματων Πληροφορικής - Ανάπτυξης Λογισμικού και Τεχνητής Νοημοσύνης\\"","english":"Master in (MSc) \\"Advanced Information Systems - Software Development and Artificial Intelligence\\""},{"greek":"Κατεύθυνση: \\"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\\"","english":"Field: Advanced Software Development Technologies"},{"greek":"Πανεπιστήμιο Μακεδονίας","english":"University of Macedonia"},{"greek":"Σεπτέμβριος 2014 - Ιούλιος 2020","english":"September 2014 - July 2020"},{"greek":"Πτυχίο (BSc) Τμήματος \\"Εφαρμοσμένης Πληροφορικής\\"","english":"Undergraduate degree (BSc) of \\"Applied Informatics\\" Department"},{"greek":"Ξένες Γλώσσες","english":"Foreign Languages"},{"greek":"Αγγλικά: Michigan Proficiency - ECPE (C2)","english":"English: Michigan Proficiency - ECPE (C2)"},{"greek":"Γερμανικά: Goethe - Zertifikat (B1)","english":"German: Goethe - Zertifikat (B1)"},{"greek":"Εργασιακή Εμπειρία","english":"Work Experience"},{"greek":"Πρακτική - Summer Camp","english":"Internship - Summer Camp"},{"greek":"Πιστοποιητικό Συμμετοχής","english":"Certificate of Participation"},{"greek":"Σύστημα Διαχείρισης Κινηματογράφων και Ταινιών","english":"Cinemas and Films Management System"},{"greek":"Με εξατομικευμένη εμπειρία χρήσης","english":"With personalized user experience"},{"greek":"Full stack application για την διαχείριση κινηματογράφων και ταινιών αλλά και λειτουργίες εύρεσης ταινιών και κράτησης εισιτηρίων από τους χρήστες. Με την συλλογή πληροφοριών από τους χρήστες, γίνονται επίσης και εξατομικευμένες προτάσεις ταινιών και κινηματογραφικών αιθουσών.","english":"Full stack application for the management of cinemas and movies as well as function for finding movies and booking tickets by the users. By collecting information from users, we also make personalized movie and cinema halls recommendations."},{"greek":"Περισσότερα θα βρείτε στα links.","english":"You will find more details in the links."},{"greek":"Δείτε το στο GitHub (Frontend - Angular)","english":"View project on GitHub (Frontend - Angular)"},{"greek":"Δείτε το στο GitHub (Backend - NodeJS)","english":"View project on GitHub (Backend - NodeJS)"},{"greek":"Android App με Backend Module","english":"Android App with Backend Module"},{"greek":"Η εφαρμογή έχει τον ρόλο της ειδοποίησης χρηστών που την έχουν εγκαταστήσει για επικίνδυνες  - έκτακτες καταστάσεις (φωτιές πλημμύρες, σεισμούς) κοντά σε αυτούς. Ο χρήστης έχει την δυνατότητα και να ειδοποιήσει για ένα επικίνδυνο περιστατικό αλλά και να ειδοποιηθεί. Η αξιολόγηση των περιστατικών γίνεται από το backend module μας.","english":"The application has the role of notifying users who have installed it about dangerous - emergency situations (fires, floods, earthquakes) near them. The user has the ability to notify about a dangerous incident and also to be notified. Incidents are evaluated by our backend module."},{"greek":"Περισσότερα θα βρείτε στα links.","english":"You will find more details in the links."},{"greek":"Δείτε το στο GitHub (Android App)","english":"View project on GitHub (Android App)"},{"greek":"Δείτε το στο GitHub (Backend - NodeJS)","english":"View project on GitHub (Backend - NodeJS)"},{"greek":"Παρουσίαση Παγκόσμιων Δεδομένων για Covid-19","english":"Presentation of Global Data on Covid-19"},{"greek":"Απλή Java με χρήση τρίτου API και τεχνικές πολυνηματικού προγραμματισμού","english":"Plain Java using a third-party API and multi-threaded programming techniques"},{"greek":"Εφαρμογή κονσόλας σε Java η οποία διαχειρίζεται δεδομένα Covid-19 για όλες τις χώρες του κόσμου και τα καταγράφει σε ένα blockchain με την χρήση παράλληλων τεχνικών προγραμματισμού.","english":"Java console application that manages Covid-19 data for all countries of the world and records it in a blockchain using parallel programming techniques."},{"greek":"Περισσότερα θα βρείτε στο link.","english":"You will find more details in the link."},{"greek":"Δείτε το στο GitHub","english":"View project on GitHub"}]}');
+module.exports = JSON.parse('{"translations":[{"greek":"Σχετικά με Εμένα","english":"About Me"},{"greek":"Εκπαίδευση","english":"Education"},{"greek":"Εργασιακή Εμπειρία","english":"Work Experience"},{"greek":"Projects","english":"Projects"},{"greek":"Γνώσεις - Δεξιότητες","english":"Knowledge - Skills"},{"greek":"Επικοινωνία","english":"Contact Me"},{"greek":"Γεωργιος Αντωνιαδης","english":"Georgios Antoniadis"},{"greek":"Λήψη Βιογραφικού","english":"Download CV"},{"greek":"Σχετικά με Εμένα","english":"About Me"},{"greek":"Προσωπικές Πληροφορίες","english":"Personal Information"},{"greek":"Πόλη Κατοικίας: ","english":"Residence City: "},{"greek":"Θεσσαλονίκη","english":"Thessaloniki"},{"greek":"Τηλέφωνο: ","english":"Phone Number: "},{"greek":"Ημερομηνία Γέννησης: ","english":"Date of Birth: "},{"greek":"Στρατιωτικές Υποχρεώσεις:  ","english":"Military Service: "},{"greek":"Εκπληρωμένες","english":"Fulfilled"},{"greek":"Με λίγα λόγια...","english":"In a few words..."},{"greek":"Junior προγραμματιστής, μεταπτυχιακός φοιτητής στην κατεύθυνση \\"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\\" του τμήματος Πληροφορικής του ΠαΠει, με ιδιαίτερο ενδιαφέρον για τις εξελίξεις στην τεχνολογική πρόοδο, τις εδραιομένες αλλά και τις ανερχόμενες τεχνικές σχεδίασης και υλοποίησης έργων λογισμκού. Στα πρώτα μου βήματα επιθυμώ να εξελίξω τις γνώσεις μου και τις ικανότητες μου στην δημιουργία ολοκληρωμένων web applications με ομαδική δουλειά και συνεργασία όπως και στην κατασκευή προγραμμάτων με γνώμονα καλές πρακτικές και πρότυπα σχεδίασης.","english":"Junior programmer, postgraduate student in the field of \\"Advanced Software Development Technologies\\" in the department of Computer Science of UoP, with particular interest for the developments in technological progress, the established but also the emerging techniques for designing and implementing software projects. In my first steps i desire to upgrade my knowledge and abilities to  create complete web applications with teamwork and collaboration as well as programming based on good practices and design patterns."},{"greek":"Εκπαίδευση","english":"Education"},{"greek":"Πανεπιστήμιο Πειραιώς","english":"University of Pireaus"},{"greek":"Νοέμβριος 2021 - Παρόν","english":"November 2021 - Present"},{"greek":"Μεταπτυχιακό (MSc) Τμήματος \\"Προηγμένων Συστήματων Πληροφορικής - Ανάπτυξης Λογισμικού και Τεχνητής Νοημοσύνης\\"","english":"Master (MSc) in \\"Advanced Information Systems - Software Development and Artificial Intelligence\\""},{"greek":"Κατεύθυνση: \\"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\\"","english":"Field: Advanced Software Development Technologies"},{"greek":"Πανεπιστήμιο Μακεδονίας","english":"University of Macedonia"},{"greek":"Σεπτέμβριος 2014 - Ιούλιος 2020","english":"September 2014 - July 2020"},{"greek":"Πτυχίο (BSc) Τμήματος \\"Εφαρμοσμένης Πληροφορικής\\"","english":"Undergraduate degree (BSc) of \\"Applied Informatics\\" Department"},{"greek":"Ξένες Γλώσσες","english":"Foreign Languages"},{"greek":"Αγγλικά: Michigan Proficiency - ECPE (C2)","english":"English: Michigan Proficiency - ECPE (C2)"},{"greek":"Γερμανικά: Goethe - Zertifikat (B1)","english":"German: Goethe - Zertifikat (B1)"},{"greek":"Εργασιακή Εμπειρία","english":"Work Experience"},{"greek":"OTS, Θεσσαλονίκη","english":"OTS, Thessaloniki"},{"greek":"Πρακτική - Summer Camp","english":"Internship - Summer Camp"},{"greek":"Πιστοποιητικό Συμμετοχής","english":"Certificate of Participation"},{"greek":"Σύστημα Διαχείρισης Κινηματογράφων και Ταινιών","english":"Cinemas and Films Management System"},{"greek":"Με εξατομικευμένη εμπειρία χρήσης","english":"With personalized user experience"},{"greek":"Full stack application για την διαχείριση κινηματογράφων και ταινιών αλλά και λειτουργίες εύρεσης ταινιών και κράτησης εισιτηρίων από τους χρήστες. Με την συλλογή πληροφοριών από τους χρήστες, γίνονται επίσης και εξατομικευμένες προτάσεις ταινιών και κινηματογραφικών αιθουσών.","english":"Full stack application for the management of cinemas and movies as well as function for finding movies and booking tickets by the users. By collecting information from users, we also make personalized movie and cinema halls recommendations."},{"greek":"Περισσότερα θα βρείτε στα links.","english":"You will find more details in the links."},{"greek":"Δείτε το στο GitHub (Frontend - Angular)","english":"View project on GitHub (Frontend - Angular)"},{"greek":"Δείτε το στο GitHub (Backend - NodeJS)","english":"View project on GitHub (Backend - NodeJS)"},{"greek":"Android App με Backend Module","english":"Android App with Backend Module"},{"greek":"Η εφαρμογή έχει τον ρόλο της ειδοποίησης χρηστών που την έχουν εγκαταστήσει για επικίνδυνες  - έκτακτες καταστάσεις (φωτιές πλημμύρες, σεισμούς) κοντά σε αυτούς. Ο χρήστης έχει την δυνατότητα και να ειδοποιήσει για ένα επικίνδυνο περιστατικό αλλά και να ειδοποιηθεί. Η αξιολόγηση των περιστατικών γίνεται από το backend module μας.","english":"The application has the role of notifying users who have installed it about dangerous - emergency situations (fires, floods, earthquakes) near them. The user has the ability to notify about a dangerous incident and also to be notified. Incidents are evaluated by our backend module."},{"greek":"Περισσότερα θα βρείτε στα links.","english":"You will find more details in the links."},{"greek":"Δείτε το στο GitHub (Android App)","english":"View project on GitHub (Android App)"},{"greek":"Δείτε το στο GitHub (Backend - NodeJS)","english":"View project on GitHub (Backend - NodeJS)"},{"greek":"Παρουσίαση Παγκόσμιων Δεδομένων για Covid-19","english":"Presentation of Global Data on Covid-19"},{"greek":"Απλή Java με χρήση τρίτου API και τεχνικές πολυνηματικού προγραμματισμού","english":"Plain Java using a third-party API and multi-threaded programming techniques"},{"greek":"Εφαρμογή κονσόλας σε Java η οποία διαχειρίζεται δεδομένα Covid-19 για όλες τις χώρες του κόσμου και τα καταγράφει σε ένα blockchain με την χρήση παράλληλων τεχνικών προγραμματισμού.","english":"Java console application that manages Covid-19 data for all countries of the world and records it in a blockchain using parallel programming techniques."},{"greek":"Περισσότερα θα βρείτε στο link.","english":"You will find more details in the link."},{"greek":"Δείτε το στο GitHub","english":"View project on GitHub"},{"greek":"Γνώσεις - Δεξιότητες","english":"Knowledge - Skills"},{"greek":"Συμπεριλαμβανομένων Πιστοποιήσεων των","english":"Including Certifications of"},{"greek":"και","english":"and"},{"greek":"Επικοινωνήστε μαζί μου","english":"Contact me"},{"greek":"Αποστολή","english":"Send"},{"greek":"Κλεισιμο","english":"Close"},{"greek":"Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.","english":"The electronic copy of the CV that will be available for download has not been completed yet."}]}');
 
 },{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -2405,6 +2407,9 @@ exports.export = function(dest, destName, get) {
         get: get
     });
 };
+
+},{}],"lpOXM":[function(require,module,exports) {
+module.exports = JSON.parse('{"translations":[{"greek":"Το email σας","english":"Your email"},{"greek":"Το μηνυμά σας","english":"Your message"}]}');
 
 },{}]},["8gzrZ","cvTwp"], "cvTwp", "parcelRequire2977")
 

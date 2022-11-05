@@ -576,13 +576,11 @@ function hmrAcceptRun(bundle, id) {
             $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
         });
         // Add dates to the timeline if exists
-        setTimeout(function() {
-            $this.find(".vtimeline-content").each(function() {
-                var date = $(this).data("date");
-                if (date) // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">' + date + "</span>");
-            });
-        }, 100);
+        $this.find(".vtimeline-content").each(function() {
+            var date = $(this).data("date");
+            if (date) // Prepend if exists
+            $(this).parent().prepend('<span class="vtimeline-date">' + date + "</span>");
+        });
     });
     // Open mobile menu
     $("#mobile-menu-open").click(function() {

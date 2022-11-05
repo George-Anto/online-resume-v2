@@ -16,7 +16,7 @@
 100C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\es\regexp\flags.js133118015627332158 0
 125C:\Users\georg\Desktop\Files\Webside Repository\new_template\resources\online_certificates\SCRUM_Funtamentals_Certificate.pdf132768934950833335 0
 92C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\dom-serializer\lib133118014633677936 1
-65C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist133119843783020342 1
+65C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist133120623404308057 1
 105C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\full\array\find-last.js133118015624962186 0
 104C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\full\string\replace.js133118015753892161 0
 102C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\full\array\reduce.js133118015750282153 0
@@ -63,7 +63,7 @@
 119C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\abortcontroller-polyfill\dist\umd-polyfill.js133118014621567908 0
 94C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\svgo\lib\svgo\coa.js133118014631247910 0
 97C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\terser\lib\transform.js133118014715437926 0
-71C:\Users\georg\Desktop\Files\Webside Repository\new_template\index.html133119843781273491 0
+71C:\Users\georg\Desktop\Files\Webside Repository\new_template\index.html133120623402268043 0
 94C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\stage\pre.js133118015744932146 0
 88C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\domhandler\lib133118014583598019 1
 112C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\actual\object\lookup-getter.js133118015709472146 0
@@ -274,7 +274,7 @@
 126C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\modules\web.url-search-params.constructor.js133118015824982149 0
 126C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@swc\helpers\lib\_class_private_field_destructure.js133118014656667903 0
 96C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\supports-color\license133118014505807904 0
-90C:\Users\georg\Desktop\Files\Webside Repository\new_template\resources\data\translate.json133119761639229608 0
+90C:\Users\georg\Desktop\Files\Webside Repository\new_template\resources\data\translate.json133120617031226693 0
 104C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\es\typed-array\fill.js133118015618522153 0
 107C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\stable\symbol\iterator.js133118015703862175 0
 89C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\htmlparser2\lib133118014647697907 1
@@ -288,7 +288,7 @@
 118C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\dom-serializer\lib\esm\foreignNames.d.ts.map133118014591757908 0
 111C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@swc\helpers\lib\_get_prototype_of.js133118014695417916 0
 105C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\svgo\plugins\convertPathData.js133118014654567917 0
-75C:\Users\georg\Desktop\Files\Webside Repository\new_template\css\styles.css133119843607923506 0
+75C:\Users\georg\Desktop\Files\Webside Repository\new_template\css\styles.css133120622457905716 0
 90C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\msgpackr-extract133118014641317931 1
 107C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\core\src\public\Config.js133118014711887918 0
 107C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\stable\error\to-string.js133118015804832165 0
@@ -1646,7 +1646,7 @@
 116C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\packager-js\src\CJSOutputFormat.js133118014591377908 0
 105C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\caniuse-lite\data\regions\GP.js133118014804267905 0
 101C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\svgo\plugins\_transforms.js133118014579717935 0
-87C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.82d8190a.js.map133119834059859269 0
+87C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.82d8190a.js.map133120617033126519 0
 110C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\actual\string\virtual\sup.js133118015787992191 0
 105C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\stable\regexp\search.js133118015757572148 0
 102C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\nth-check\lib\parse.d.ts.map133118014640017912 0
@@ -2491,7 +2491,7 @@
 105C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\caniuse-lite\data\regions\BB.js133118014717137940 0
 91C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\globals\readme.md133118014569217912 0
 123C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest4.c133118014729997915 0
-87C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.d947f396.js.map133119832294528565 0
+87C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.d947f396.js.map133120568971612951 0
 109C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\stable\error\constructor.js133118015547452166 0
 126C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest_enc.c133118014719107926 0
 104C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\features\array\flat.js133118015629232162 0
@@ -4061,7 +4061,7 @@
 116C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\modules\es.typed-array.iterator.js133118015589082156 0
 105C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\caniuse-lite\data\regions\UY.js133118014860587904 0
 111C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\modules\es.typed-array.map.js133118015589192158 0
-80C:\Users\georg\Desktop\Files\Webside Repository\new_template\js\script-jQuery.js133118010099298931 0
+80C:\Users\georg\Desktop\Files\Webside Repository\new_template\js\script-jQuery.js133120568969475809 0
 97C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\actual\instance133118015825802158 1
 120C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\core-js\modules\es.typed-array.reduce-right.js133118015589332163 0
 101C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\optimizer-image\lib133118014580897918 1
@@ -6805,7 +6805,7 @@
 103C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@swc\helpers\lib\_decorate.js133118014683827916 0
 123C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@swc\helpers\lib\_define_enumerable_properties.js133118014690517924 0
 106C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@swc\helpers\lib\_export_star.js133118014693607915 0
-84C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.748ad148.css133119843337648316 0
+84C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.748ad148.css133120622459345698 0
 102C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@swc\helpers\lib\_extends.js133118014694667920 0
 114C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\transformer-js\native-browser.js133118014611817920 0
 98C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@swc\helpers\lib\_get.js133118014696277894 0
@@ -6976,7 +6976,7 @@
 117C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\transformer-svg\src\dependencies.js133118014569427912 0
 119C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\transformer-svg\src\SVGTransformer.js133118014607257931 0
 116C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\transformer-react-refresh-wrap\lib133118014584317916 1
-76C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.html133119843783000378 0
+76C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.html133120623404278041 0
 125C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\transformer-react-refresh-wrap\package.json133118014607437915 0
 147C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\transformer-react-refresh-wrap\src\ReactRefreshWrapTransformer.js133118014598367911 0
 139C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\transformer-react-refresh-wrap\src\helpers\.eslintrc.json133118014603217944 0
@@ -7177,7 +7177,7 @@
 92C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@lezer\common\dist133118014611537923 1
 158C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-false\package.json133118014751487945 0
 104C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\node-resolver-core\lib133118014727317916 1
-83C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.82d8190a.js133119834059809314 0
+83C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.82d8190a.js133120617033066516 0
 113C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\node-resolver-core\package.json133118014742397906 0
 105C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\node-resolver-core\test133118014735117913 1
 121C:\Users\georg\Desktop\Files\Webside Repository\new_template\node_modules\@parcel\node-resolver-core\test\fixture\env-dep133118014743487908 1
@@ -7561,15 +7561,15 @@
 109C:\Users\georg\Desktop\Files\Webside Repository\new_template\libs\font-awesome\fonts\fontawesome-webfont.woff133086829187097379 0
 100C:\Users\georg\Desktop\Files\Webside Repository\new_template\libs\font-awesome\fonts\FontAwesome.otf133086829186857344 0
 99C:\Users\georg\Desktop\Files\Webside Repository\new_template\libs\font-awesome\css\font-awesome.css133086829186787334 0
-80C:\Users\georg\Desktop\Files\Webside Repository\new_template\js\script-custom.js133119834058023556 0
+80C:\Users\georg\Desktop\Files\Webside Repository\new_template\js\script-custom.js133120614959236836 0
 110C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\covid_data_presentation_project.92ca761f.jpg133119831966003886 0
-83C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.d947f396.js133119832294398556 0
+83C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.d947f396.js133120568971552970 0
 86C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\favicon.7366e36f.ico133118026492160491 0
 100C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\fontawesome-webfont.b68b912c.woff2133119831965713877 0
 87C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.0d9702cf.js.map133119831966513902 0
 83C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.2195cc03.js133118016717629472 0
 84C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.4b83045f.css133119831965543890 0
-88C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.748ad148.css.map133119843337688330 0
+88C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.748ad148.css.map133120622459385720 0
 84C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.888b521b.css133119831965543890 0
 83C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.eec845d5.js133119645665761610 0
 87C:\Users\georg\Desktop\Files\Webside Repository\new_template\dist\index.eec845d5.js.map133119645666331637 0
