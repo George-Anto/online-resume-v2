@@ -119,7 +119,6 @@ btnDownloadCV.addEventListener("click", function () {
 
 //Function to implement the greek translation
 const greekTranslation = function () {
-	this.blur();
 	if (isGreek) return;
 
 	translateTo("greek");
@@ -130,7 +129,6 @@ const greekTranslation = function () {
 
 //Function to implement the english translation
 const englishTranslation = function () {
-	this.blur();
 	if (!isGreek) return;
 
 	translateTo("english");
