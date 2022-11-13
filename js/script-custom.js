@@ -4,21 +4,25 @@ import "regenerator-runtime/runtime";
 import translationObj from "../resources/data/translate.json";
 import placeholderTranslationObj from "../resources/data/placeholder-translate.json";
 
-//Download cv button
-const btnDownloadCV = document.querySelector("#tr-download-cv");
+//Helper function for selecting DOM elements
+const selectEl = function (DOMEl) {
+	return document.querySelector(DOMEl);
+};
+
+//Open Modal for Download cv button
+const btnOpenModalDownloadCV = selectEl("#tr-download-cv");
+// Download cv modal
+const downloadCVModal = selectEl("#download-cv-modal");
+// Get the <span> element that closes the modal
+const closeModalBtn = selectEl(".close-modal");
 
 //Translation buttons
-const btnGreek = document.querySelector(".btn-greek");
-const btnEnglish = document.querySelector(".btn-english");
+const btnGreek = selectEl(".btn-greek");
+const btnEnglish = selectEl(".btn-english");
 
 //Arrays to store the DOM elements that will be traslated
 const elementsForTranslation = [];
 const elementsForPlaceholderTranslation = [];
-
-//Helper function
-const selectEl = function (DOMEl) {
-	return document.querySelector(DOMEl);
-};
 
 //DOM elemtents for translation are pushed in the corresponding arrays
 elementsForTranslation.push(selectEl("#tr-menu-item-1"));
@@ -76,6 +80,9 @@ elementsForTranslation.push(selectEl("#tr-skills-3"));
 elementsForTranslation.push(selectEl("#tr-contact-1"));
 elementsForTranslation.push(selectEl("#tr-contact-2"));
 elementsForTranslation.push(selectEl("#tr-close"));
+elementsForTranslation.push(selectEl("#download-1"));
+elementsForTranslation.push(selectEl("#download-2"));
+elementsForTranslation.push(selectEl("#download-3"));
 
 elementsForPlaceholderTranslation.push(selectEl("#tr-contact-placeholder-1"));
 elementsForPlaceholderTranslation.push(selectEl("#tr-contact-placeholder-2"));
@@ -111,11 +118,26 @@ const pdfCVNotReady = async function () {
 	}
 };
 
-//Listener for the download cv button
-btnDownloadCV.addEventListener("click", function () {
+//Listener for the download cv modal
+// When the user clicks on the button, open the modal
+btnOpenModalDownloadCV.addEventListener("click", function () {
 	this.blur();
-	pdfCVNotReady();
+	// location.href = "#contact";
+	downloadCVModal.style.display = "grid";
 });
+
+//Listener for the close modal button
+closeModalBtn.addEventListener("click", function () {
+	this.blur();
+	downloadCVModal.style.display = "none";
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+	if (event.target == downloadCVModal) {
+		downloadCVModal.style.display = "none";
+	}
+};
 
 //Function to implement the greek translation
 const greekTranslation = function () {

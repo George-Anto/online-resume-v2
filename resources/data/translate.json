@@ -221,6 +221,18 @@
 			"english": "Close"
 		},
 		{
+			"greek": "Σε ποια γλώσσα θέλετε να κατεβάσετε το βιoγραφικό;",
+			"english": "In which language do you wish to download the resume?"
+		},
+		{
+			"greek": "Ελληνικά",
+			"english": "Greek"
+		},
+		{
+			"greek": "Αγγλικά",
+			"english": "English"
+		},
+		{
 			"greek": "Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.",
 			"english": "The electronic copy of the CV that will be available for download has not been completed yet."
 		}

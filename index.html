@@ -16,6 +16,10 @@
 		<link rel="shortcut icon" type="image/png" href="resources/images/icon.png" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
 		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/styles.css" rel="stylesheet" />
 
@@ -74,7 +78,7 @@
 			<div id="lead-content">
 				<h1 id="tr-name">Γεωργιος Αντωνιαδης</h1>
 				<h2>Junior Software Engineer</h2>
-				<a href="#" class="btn-rounded-white" id="tr-download-cv">Λήψη Βιογραφικού</a>
+				<a href="#about" class="btn-rounded-white" id="tr-download-cv">Λήψη Βιογραφικού</a>
 				<br />
 				<br />
 				<div class="col-sm-12 social-top">
@@ -92,6 +96,7 @@
 					</ul>
 				</div>
 			</div>
+
 			<!-- End #lead-content -->
 
 			<div id="lead-overlay"></div>
@@ -106,6 +111,29 @@
 		<!-- End #lead -->
 
 		<div id="about">
+			<!-- The Modal -->
+			<div id="download-cv-modal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close-modal">&times;</span>
+						<h2 style="text-align: center" id="download-1">
+							Σε ποια γλώσσα θέλετε να κατεβάσετε το βιoγραφικό;
+						</h2>
+					</div>
+					<div class="modal-body">
+						<a href="resources\images\cellphone.png" download class="download-btn">
+							<span class="download-btn-inner" id="download-2">Ελληνικά</span>
+							<span class="fa fa-download"></span>
+						</a>
+						<a href="resources\images\cellphone.png" download class="download-btn"
+							><span class="download-btn-inner" id="download-3">Αγγλικά</span>
+							<span class="fa fa-download"></span
+						></a>
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
