@@ -40,9 +40,10 @@ elementsForTranslation.push(selectEl("#tr-about-3-1"));
 elementsForTranslation.push(selectEl("#tr-about-4"));
 elementsForTranslation.push(selectEl("#tr-about-5"));
 elementsForTranslation.push(selectEl("#tr-about-6"));
-elementsForTranslation.push(selectEl("#tr-about-6-1"));
 elementsForTranslation.push(selectEl("#tr-about-7"));
+elementsForTranslation.push(selectEl("#tr-about-7-1"));
 elementsForTranslation.push(selectEl("#tr-about-8"));
+elementsForTranslation.push(selectEl("#tr-about-9"));
 elementsForTranslation.push(selectEl("#tr-education-1"));
 elementsForTranslation.push(selectEl("#tr-education-2"));
 elementsForTranslation.push(selectEl("#tr-education-3"));
@@ -107,35 +108,46 @@ const translateTo = async function (language) {
 	}
 };
 
+// Legacy Function
 //Function to display the message that the cv is not yet ready
-const pdfCVNotReady = async function () {
-	try {
-		alert(
-			translationObj.translations[translationObj.translations.length - 1][isGreek ? "greek" : "english"]
-		);
-	} catch (err) {
-		console.error(err);
-	}
-};
+// const pdfCVNotReady = async function () {
+// 	try {
+// 		alert(
+// 			translationObj.translations[translationObj.translations.length - 1][isGreek ? "greek" : "english"]
+// 		);
+// 	} catch (err) {
+// 		console.error(err);
+// 	}
+// };
 
 //Listener for the download cv modal
 // When the user clicks on the button, open the modal
 btnOpenModalDownloadCV.addEventListener("click", function () {
 	this.blur();
-	// location.href = "#contact";
+	//Display the modal
 	downloadCVModal.style.display = "grid";
+	//Disable scrolling when modal is visible
+	document.body.style.overflow = "hidden";
 });
+
+//Helper function to close the modal
+const closeModal = () => {
+	//Close the modal
+	downloadCVModal.style.display = "none";
+	//Reenable scrolling when modal is closed
+	document.body.style.overflow = "initial";
+};
 
 //Listener for the close modal button
 closeModalBtn.addEventListener("click", function () {
 	this.blur();
-	downloadCVModal.style.display = "none";
+	closeModal();
 });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
 	if (event.target == downloadCVModal) {
-		downloadCVModal.style.display = "none";
+		closeModal();
 	}
 };
 

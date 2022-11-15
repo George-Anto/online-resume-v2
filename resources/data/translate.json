@@ -53,6 +53,10 @@
 			"english": "Phone Number: "
 		},
 		{
+			"greek": "698662282",
+			"english": "+306986662282"
+		},
+		{
 			"greek": "Ημερομηνία Γέννησης: ",
 			"english": "Date of Birth: "
 		},
@@ -121,8 +125,8 @@
 			"english": "Work Experience"
 		},
 		{
-			"greek": "OTS, Θεσσαλονίκη",
-			"english": "OTS, Thessaloniki"
+			"greek": "OTS SA, Θεσσαλονίκη",
+			"english": "OTS SA, Thessaloniki"
 		},
 		{
 			"greek": "Πρακτική - Summer Camp",
