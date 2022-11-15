@@ -53,6 +53,10 @@
 			"english": "Phone Number: "
 		},
 		{
+			"greek": "698662282",
+			"english": "+306986662282"
+		},
+		{
 			"greek": "Ημερομηνία Γέννησης: ",
 			"english": "Date of Birth: "
 		},
@@ -121,8 +125,8 @@
 			"english": "Work Experience"
 		},
 		{
-			"greek": "OTS, Θεσσαλονίκη",
-			"english": "OTS, Thessaloniki"
+			"greek": "OTS SA, Θεσσαλονίκη",
+			"english": "OTS SA, Thessaloniki"
 		},
 		{
 			"greek": "Πρακτική - Summer Camp",
@@ -219,6 +223,18 @@
 		{
 			"greek": "Κλεισιμο",
 			"english": "Close"
+		},
+		{
+			"greek": "Σε ποια γλώσσα θέλετε να κατεβάσετε το βιoγραφικό;",
+			"english": "In which language do you wish to download the resume?"
+		},
+		{
+			"greek": "Ελληνικά",
+			"english": "Greek"
+		},
+		{
+			"greek": "Αγγλικά",
+			"english": "English"
 		},
 		{
 			"greek": "Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.",

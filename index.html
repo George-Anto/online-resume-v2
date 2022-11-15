@@ -16,6 +16,10 @@
 		<link rel="shortcut icon" type="image/png" href="resources/images/icon.png" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
 		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/styles.css" rel="stylesheet" />
 
@@ -74,7 +78,7 @@
 			<div id="lead-content">
 				<h1 id="tr-name">Γεωργιος Αντωνιαδης</h1>
 				<h2>Junior Software Engineer</h2>
-				<a href="#" class="btn-rounded-white" id="tr-download-cv">Λήψη Βιογραφικού</a>
+				<a href="#about" class="btn-rounded-white" id="tr-download-cv">Λήψη Βιογραφικού</a>
 				<br />
 				<br />
 				<div class="col-sm-12 social-top">
@@ -92,6 +96,7 @@
 					</ul>
 				</div>
 			</div>
+
 			<!-- End #lead-content -->
 
 			<div id="lead-overlay"></div>
@@ -106,6 +111,36 @@
 		<!-- End #lead -->
 
 		<div id="about">
+			<!-- The Modal -->
+			<div id="download-cv-modal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close-modal">&times;</span>
+						<h2 style="text-align: center" id="download-1">
+							Σε ποια γλώσσα θέλετε να κατεβάσετε το βιoγραφικό;
+						</h2>
+					</div>
+					<div class="modal-body">
+						<a
+							href="resources\cv\Γεώργιος_Αντωνιάδης_-_Junior_Software_Engineer.pdf"
+							download
+							class="download-btn"
+						>
+							<span class="download-btn-inner" id="download-2">Ελληνικά</span>
+							<span class="fa fa-download"></span>
+						</a>
+						<a
+							href="resources\cv\Georgios_Antoniadis_-_Junior_Software_Engineer.pdf"
+							download
+							class="download-btn"
+							><span class="download-btn-inner" id="download-3">Αγγλικά</span>
+							<span class="fa fa-download"></span
+						></a>
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -115,26 +150,27 @@
 							<span id="tr-about-3">Πόλη Κατοικίας:&nbsp;</span
 							><span><b id="tr-about-3-1">Θεσσαλονίκη</b></span>
 							<br />
-							<span id="tr-about-4">Τηλέφωνο:&nbsp;</span><span><b>6986662282</b></span>
+							<span id="tr-about-4">Τηλέφωνο:&nbsp;</span
+							><span><b id="tr-about-5">6986662282</b></span>
 							<br />
 							<span>Email: <b>gantoniadis20@gmail.com</b></span>
 							<br />
-							<span id="tr-about-5">Ημερομηνία Γέννησης:&nbsp;</span
+							<span id="tr-about-6">Ημερομηνία Γέννησης:&nbsp;</span
 							><span><b>20/03/1996</b></span>
 							<br />
-							<span id="tr-about-6">Στρατιωτικές Υποχρεώσεις:&nbsp;</span
-							><span><b id="tr-about-6-1">Εκπληρωμένες</b></span>
+							<span id="tr-about-7">Στρατιωτικές Υποχρεώσεις:&nbsp;</span
+							><span><b id="tr-about-7-1">Εκπληρωμένες</b></span>
 							<br />
 							<br />
 						</p>
 					</div>
 					<div class="col-md-8">
-						<h3 id="tr-about-7">Με λίγα λόγια...</h3>
-						<p id="tr-about-8">
+						<h3 id="tr-about-8">Με λίγα λόγια...</h3>
+						<p id="tr-about-9">
 							Junior προγραμματιστής, μεταπτυχιακός φοιτητής στην κατεύθυνση "Προηγμένες
 							Τεχνολογίες Ανάπτυξης Λογισμικού" του τμήματος Πληροφορικής του ΠαΠει, με
-							ιδιαίτερο ενδιαφέρον για τις εξελίξεις στην τεχνολογική πρόοδο, τις εδραιομένες
-							αλλά και τις ανερχόμενες τεχνικές σχεδίασης και υλοποίησης έργων λογισμκού. Στα
+							ιδιαίτερο ενδιαφέρον για τις εξελίξεις στην τεχνολογική πρόοδο, τις εδραιωμένες
+							αλλά και τις ανερχόμενες τεχνικές σχεδίασης και υλοποίησης έργων λογισμικού. Στα
 							πρώτα μου βήματα επιθυμώ να εξελίξω τις γνώσεις μου και τις ικανότητες μου στην
 							δημιουργία ολοκληρωμένων web applications με ομαδική δουλειά και συνεργασία όπως
 							και στην κατασκευή προγραμμάτων με γνώμονα καλές πρακτικές και πρότυπα σχεδίασης.
@@ -191,7 +227,7 @@
 			<h2 class="heading" id="tr-experience-1">Εργασιακή Εμπειρία</h2>
 			<div id="experience-timeline">
 				<div id="tr-experience-date" data-date="07/2021 – 08/2021">
-					<h3 id="tr-experience-2">OTS, Θεσσαλονίκη</h3>
+					<h3 id="tr-experience-2">OTS SA, Θεσσαλονίκη</h3>
 					<a href="https://ots.gr/" target="_blank"
 						><img src="/resources/images/ots.jpg" width="30" height="30" alt="ots"
 					/></a>

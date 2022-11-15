@@ -4,21 +4,25 @@ import "regenerator-runtime/runtime";
 import translationObj from "../resources/data/translate.json";
 import placeholderTranslationObj from "../resources/data/placeholder-translate.json";
 
-//Download cv button
-const btnDownloadCV = document.querySelector("#tr-download-cv");
+//Helper function for selecting DOM elements
+const selectEl = function (DOMEl) {
+	return document.querySelector(DOMEl);
+};
+
+//Open Modal for Download cv button
+const btnOpenModalDownloadCV = selectEl("#tr-download-cv");
+// Download cv modal
+const downloadCVModal = selectEl("#download-cv-modal");
+// Get the <span> element that closes the modal
+const closeModalBtn = selectEl(".close-modal");
 
 //Translation buttons
-const btnGreek = document.querySelector(".btn-greek");
-const btnEnglish = document.querySelector(".btn-english");
+const btnGreek = selectEl(".btn-greek");
+const btnEnglish = selectEl(".btn-english");
 
 //Arrays to store the DOM elements that will be traslated
 const elementsForTranslation = [];
 const elementsForPlaceholderTranslation = [];
-
-//Helper function
-const selectEl = function (DOMEl) {
-	return document.querySelector(DOMEl);
-};
 
 //DOM elemtents for translation are pushed in the corresponding arrays
 elementsForTranslation.push(selectEl("#tr-menu-item-1"));
@@ -36,9 +40,10 @@ elementsForTranslation.push(selectEl("#tr-about-3-1"));
 elementsForTranslation.push(selectEl("#tr-about-4"));
 elementsForTranslation.push(selectEl("#tr-about-5"));
 elementsForTranslation.push(selectEl("#tr-about-6"));
-elementsForTranslation.push(selectEl("#tr-about-6-1"));
 elementsForTranslation.push(selectEl("#tr-about-7"));
+elementsForTranslation.push(selectEl("#tr-about-7-1"));
 elementsForTranslation.push(selectEl("#tr-about-8"));
+elementsForTranslation.push(selectEl("#tr-about-9"));
 elementsForTranslation.push(selectEl("#tr-education-1"));
 elementsForTranslation.push(selectEl("#tr-education-2"));
 elementsForTranslation.push(selectEl("#tr-education-3"));
@@ -76,6 +81,9 @@ elementsForTranslation.push(selectEl("#tr-skills-3"));
 elementsForTranslation.push(selectEl("#tr-contact-1"));
 elementsForTranslation.push(selectEl("#tr-contact-2"));
 elementsForTranslation.push(selectEl("#tr-close"));
+elementsForTranslation.push(selectEl("#download-1"));
+elementsForTranslation.push(selectEl("#download-2"));
+elementsForTranslation.push(selectEl("#download-3"));
 
 elementsForPlaceholderTranslation.push(selectEl("#tr-contact-placeholder-1"));
 elementsForPlaceholderTranslation.push(selectEl("#tr-contact-placeholder-2"));
@@ -100,22 +108,48 @@ const translateTo = async function (language) {
 	}
 };
 
+// Legacy Function
 //Function to display the message that the cv is not yet ready
-const pdfCVNotReady = async function () {
-	try {
-		alert(
-			translationObj.translations[translationObj.translations.length - 1][isGreek ? "greek" : "english"]
-		);
-	} catch (err) {
-		console.error(err);
-	}
+// const pdfCVNotReady = async function () {
+// 	try {
+// 		alert(
+// 			translationObj.translations[translationObj.translations.length - 1][isGreek ? "greek" : "english"]
+// 		);
+// 	} catch (err) {
+// 		console.error(err);
+// 	}
+// };
+
+//Listener for the download cv modal
+// When the user clicks on the button, open the modal
+btnOpenModalDownloadCV.addEventListener("click", function () {
+	this.blur();
+	//Display the modal
+	downloadCVModal.style.display = "grid";
+	//Disable scrolling when modal is visible
+	document.body.style.overflow = "hidden";
+});
+
+//Helper function to close the modal
+const closeModal = () => {
+	//Close the modal
+	downloadCVModal.style.display = "none";
+	//Reenable scrolling when modal is closed
+	document.body.style.overflow = "initial";
 };
 
-//Listener for the download cv button
-btnDownloadCV.addEventListener("click", function () {
+//Listener for the close modal button
+closeModalBtn.addEventListener("click", function () {
 	this.blur();
-	pdfCVNotReady();
+	closeModal();
 });
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+	if (event.target == downloadCVModal) {
+		closeModal();
+	}
+};
 
 //Function to implement the greek translation
 const greekTranslation = function () {
