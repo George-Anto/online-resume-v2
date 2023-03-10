@@ -785,6 +785,11 @@ footer {
 	color: black;
 	text-decoration: none;
 }
+.link-knowledge:focus {
+	color: #374054;
+	background-color: transparent;
+	text-decoration: underline;
+}
 .translate-buttons {
 	margin-top: 0.5rem;
 }
