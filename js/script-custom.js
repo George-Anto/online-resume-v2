@@ -3,6 +3,7 @@ import "regenerator-runtime/runtime";
 //Load the translation data
 import translationObj from "../resources/data/translate.json";
 import placeholderTranslationObj from "../resources/data/placeholder-translate.json";
+import datesTranslationObj from "../resources/data/dates-translate.json";
 
 //Helper function for selecting DOM elements
 const selectEl = function (DOMEl) {
@@ -11,10 +12,12 @@ const selectEl = function (DOMEl) {
 
 //Open Modal for Download cv button
 const btnOpenModalDownloadCV = selectEl("#tr-download-cv");
-// Download cv modal
+//Download cv modal
 const downloadCVModal = selectEl("#download-cv-modal");
-// Get the <span> element that closes the modal
+//Get the <span> element that closes the modal
 const closeModalBtn = selectEl(".close-modal");
+//Select the dates spans for the work experience
+const spanDates = document.getElementsByClassName("vtimeline-date");
 
 //Translation buttons
 const btnGreek = selectEl(".btn-greek");
@@ -59,6 +62,7 @@ elementsForTranslation.push(selectEl("#tr-experience-1"));
 elementsForTranslation.push(selectEl("#tr-experience-2"));
 elementsForTranslation.push(selectEl("#tr-experience-3"));
 elementsForTranslation.push(selectEl("#tr-experience-4"));
+elementsForTranslation.push(selectEl("#tr-experience-5"));
 elementsForTranslation.push(selectEl("#tr-projects-1"));
 elementsForTranslation.push(selectEl("#tr-projects-2"));
 elementsForTranslation.push(selectEl("#tr-projects-3"));
@@ -103,6 +107,9 @@ const translateTo = async function (language) {
 			(elementForTranslation, index) =>
 				(elementForTranslation.placeholder = placeholderTranslationObj.translations[index][language])
 		);
+		Array.from(spanDates).forEach(
+			(span, index) => (span.innerHTML = datesTranslationObj.translations[index][language])
+		);
 	} catch (err) {
 		console.error(err);
 	}
@@ -121,7 +128,7 @@ const translateTo = async function (language) {
 // };
 
 //Listener for the download cv modal
-// When the user clicks on the button, open the modal
+//When the user clicks on the button, open the modal
 btnOpenModalDownloadCV.addEventListener("click", function () {
 	this.blur();
 	//Display the modal
@@ -144,7 +151,7 @@ closeModalBtn.addEventListener("click", function () {
 	closeModal();
 });
 
-// When the user clicks anywhere outside of the modal, close it
+//When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
 	if (event.target == downloadCVModal) {
 		closeModal();
@@ -156,7 +163,9 @@ const greekTranslation = function () {
 	if (isGreek) return;
 
 	translateTo("greek");
+
 	isGreek = true;
+
 	btnGreek.classList.toggle("tr-btn-selected");
 	btnEnglish.classList.toggle("tr-btn-selected");
 };
@@ -166,7 +175,9 @@ const englishTranslation = function () {
 	if (!isGreek) return;
 
 	translateTo("english");
+
 	isGreek = false;
+
 	btnEnglish.classList.toggle("tr-btn-selected");
 	btnGreek.classList.toggle("tr-btn-selected");
 };
