@@ -45,8 +45,8 @@
 			"english": "Residence City: "
 		},
 		{
-			"greek": "Θεσσαλονίκη",
-			"english": "Thessaloniki"
+			"greek": "Νάουσα, Ημαθία",
+			"english": "Naoussa, Imathia"
 		},
 		{
 			"greek": "Τηλέφωνο: ",
@@ -73,8 +73,12 @@
 			"english": "In a few words..."
 		},
 		{
-			"greek": "Ως junior προγραμματιστής και μεταπτυχιακός φοιτητής με ειδίκευση στις \"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\" του τμήματος Πληροφορικής του ΠαΠει, είμαι παθιασμένος με το σχεδιασμό και την υλοποίηση καινοτόμων έργων λογισμικού που αγγίζουν τα όρια της τεχνολογικής προόδου. Τα ιδιαίτερα ενδιαφέροντά μου έγκεινται στην εξερεύνηση καθιερωμένων και αναδυόμενων τεχνικών για τη δημιουργία web – full stack εφαρμογών και είμαι αφοσιωμένος στο να βελτιώνω συνεχώς τις δεξιότητες και τις γνώσεις μου μέσω επαναλαμβανόμενων ευκαιριών μάθησης και ανάπτυξης. Έχω εμπειρία στη συνεργασία κατασκευής έργων λογισμικού με τους συμφοιτητές μου και γνωρίζω σε βάθος αρκετές γλώσσες προγραμματισμού και εργαλεία. Στα πρώτα μου βήματα, έχω επικεντρωθεί στην κατασκευή προγραμμάτων που βασίζονται σε καλές πρακτικές και πρότυπα σχεδίασης και είμαι ενθουσιασμένος που θα συνεχίσω να χτίζω πάνω σε αυτά τα θεμέλια, καθώς προχωράω και εξελίσσω την καριέρα μου.",
-			"english": "As a skilled junior developer and postgraduate student specializing in \"Advanced Software Development Technologies\" in the department of Computer Science of UoP, I am passionate about designing and implementing innovative software projects that push the boundaries of technological progress. My particular interests lie in exploring both established and emerging techniques for building web – full stack applications, and I am committed to continuously improve my skills and knowledge through ongoing learning and development opportunities. I have experience working collaboratively on software projects with my fellow students and am proficient in several programming languages and tools. In my first steps, I have focused on programming based on good practices and design patterns, and I am excited to continue building on these foundations as I advance in my career."
+			"greek": "Ως junior προγραμματιστής και απόφοιτος του μεταπτυχιακού προγράμματος με ειδίκευση στις \"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\" του τμήματος Πληροφορικής του ΠαΠει, είμαι παθιασμένος με το σχεδιασμό και την υλοποίηση καινοτόμων έργων λογισμικού που αγγίζουν τα όρια της τεχνολογικής προόδου. Τα ιδιαίτερα ενδιαφέροντά μου έγκεινται στην εξερεύνηση καθιερωμένων και αναδυόμενων τεχνικών για τη δημιουργία full-stack web εφαρμογών και είμαι αφοσιωμένος στο να βελτιώνω συνεχώς τις δεξιότητες και τις γνώσεις μου μέσω επαναλαμβανόμενων ευκαιριών μάθησης και ανάπτυξης. Έχω εμπειρία στη συνεργασία κατασκευής έργων λογισμικού με συναδέλφους αλλά και συμφοιτητές και γνωρίζω σε βάθος αρκετές γλώσσες προγραμματισμού και εργαλεία. Στα πρώτα μου βήματα, έχω επικεντρωθεί στην κατασκευή προγραμμάτων που βασίζονται σε καλές πρακτικές και πρότυπα σχεδίασης και είμαι ενθουσιασμένος που θα συνεχίσω να χτίζω πάνω σε αυτά τα θεμέλια, καθώς προχωράω και εξελίσσω την καριέρα μου.",
+			"english": "As a skilled junior developer and a graduate of the postgraduate program specializing in \"Advanced Software Development Technologies\" in the department of Computer Science of UoP, I am passionate about designing and implementing innovative software projects that push the boundaries of technological progress. My particular interests lie in exploring both established and emerging techniques for building full-stack web applications, and I am committed to continuously improve my skills and knowledge through ongoing learning and development opportunities. I have experience working collaboratively on software projects with both colleagues and fellow students and am proficient in several programming languages and tools. In my first steps, I have focused on programming based on good practices and design patterns, and I am excited to continue building on these foundations as I advance in my career."
+		},
+		{
+			"greek": "Στην επαγγελματική μου πορεία μέχρι στιγμής, έχω αποκτήσει εμπειρία δουλεύοντας με τεχνολογίες όπως η Spring, η Angular και οι σχεσιακές βάσεις δεδομένων. Αυτά τα εργαλεία με βοήθησαν να εμβαθύνω στην ανάπτυξη των full-stack web εφαρμογών και τη δημιουργία σταθερών και επεκτάσιμων λύσεων.",
+			"english": "In my career path so far, I have gained experience working with technologies such as Spring, Angular and relational databases. These tools helped me delve deeper into developing full-stack web applications and building stable and scalable solutions."
 		},
 		{
 			"greek": "Εκπαίδευση",
@@ -85,8 +89,8 @@
 			"english": "University of Piraeus"
 		},
 		{
-			"greek": "Νοέμβριος 2021 - Παρόν",
-			"english": "November 2021 - Present"
+			"greek": "Νοέμβριος 2021 - Οκτώβριος 2024",
+			"english": "November 2021 - October 2024"
 		},
 		{
 			"greek": "Μεταπτυχιακό (MSc) Τμήματος \"Προηγμένων Συστήματων Πληροφορικής - Ανάπτυξης Λογισμικού και Τεχνητής Νοημοσύνης\"",
@@ -149,8 +153,8 @@
 			"english": "With personalized user experience"
 		},
 		{
-			"greek": "Full stack application για την διαχείριση κινηματογράφων και ταινιών αλλά και λειτουργίες εύρεσης ταινιών και κράτησης εισιτηρίων από τους χρήστες. Με την συλλογή πληροφοριών από τους χρήστες, γίνονται επίσης και εξατομικευμένες προτάσεις ταινιών και κινηματογραφικών αιθουσών.",
-			"english": "Full stack application for the management of cinemas and movies as well as function for finding movies and booking tickets by the users. By collecting information from users, we also make personalized movie and cinema halls recommendations."
+			"greek": "Full-stack application για την διαχείριση κινηματογράφων και ταινιών αλλά και λειτουργίες εύρεσης ταινιών και κράτησης εισιτηρίων από τους χρήστες. Με την συλλογή πληροφοριών από τους χρήστες, γίνονται επίσης και εξατομικευμένες προτάσεις ταινιών και κινηματογραφικών αιθουσών.",
+			"english": "Full-stack application for the management of cinemas and movies as well as function for finding movies and booking tickets by the users. By collecting information from users, we also make personalized movie and cinema halls recommendations."
 		},
 		{
 			"greek": "Περισσότερα θα βρείτε στα links.",
@@ -203,6 +207,46 @@
 		{
 			"greek": "Δείτε το στο GitHub",
 			"english": "View project on GitHub"
+		},
+		{
+			"greek": "Ολοκληρωμένη Full-Stack εφαρμογή με διάφορες τεχνικές",
+			"english": "Complete Full-Stack application with various techniques"
+		},
+		{
+			"greek": "Web εφαρμογή που διαχειρίζεται δεδομένα για διαδρομές τρεξίματος και χρήστες με διαφορετικούς ρόλους και δυνατότητες. Είναι κατασκευασμένη με Spring Boot 3, Angular 18 και χρησιμοποιεί PostgreSQL ως βάση δεδομένων. Τέλος, η διαχείριση της γίνεται με Maven και άμεση εκτέλεση της σε οποιοδήποτε περιβάλλον με Docker.",
+			"english": "A web application that manages data for running routes and users with different roles and capabilities. It is built with Spring Boot 3, Angular 18, and uses PostgreSQL as its database. Finally, its management is done with Maven, and it can be seamlessly executed in any environment using Docker."
+		},
+		{
+			"greek": "Περισσότερα θα βρείτε στα links.",
+			"english": "You will find more details in the links."
+		},
+		{
+			"greek": "Δείτε την στο GitHub",
+			"english": "View project on GitHub"
+		},
+		{
+			"greek": "Επισκεφθείτε την Runnerz Εφαρμογή",
+			"english": "Visit Runnerz Application"
+		},
+		{
+			"greek": "Android Εφαρμογή, μέρος ένος μεγαλύτερου συστήματος",
+			"english": "Android Application, part of a larger software project"
+		},
+		{
+			"greek": "Εφαρμογή για Android κινητές συσκευές, μέρος της διπλωματικής μου διατριβής, κατασκευασμένη με Kotlin, που καταγράφει το πρόσωπο του χρήστη κατά τη διάρκεια προβολής βίντεο από το YouTube, με σκοπό την ανάλυση αυτού και των συναισθημάτων του με τη βοήθεια του backend που επικοινωνεί καθώς και του Amazon Rekognition Service.",
+			"english": "Android mobile application, part of my postgraduate thesis, built with Kotlin, which captures the user's face while watching a video from YouTube, in order to analyze it and their emotions with the help of the backend that it communicates with as well as the Amazon Rekognition Service."
+		},
+		{
+			"greek": "Περισσότερα θα βρείτε στα links.",
+			"english": "You will find more details in the links."
+		},
+		{
+			"greek": "Δείτε την στο GitHub",
+			"english": "View project on GitHub"
+		},
+		{
+			"greek": "Διπλωματική Εργασία - Διώνη - Πανεπιστήμιο Πειραιώς",
+			"english": "Postgraduate Thesis - Dione - University of Piraeus"
 		},
 		{
 			"greek": "Γνώσεις - Δεξιότητες",
