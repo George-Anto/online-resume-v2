@@ -233,8 +233,8 @@
 			"english": "Android Application, part of a larger software project"
 		},
 		{
-			"greek": "Εφαρμογή για Android κινητές συσκευές, μέρος της διπλωματικής μου διατριβής, κατασκευασμένη με Kotlin, που καταγράφει το πρόσωπο του χρήστη κατά τη διάρκεια προβολής βίντεο από το YouTube, με σκοπό την ανάλυση αυτού και των συναισθημάτων του με τη βοήθεια του backend που επικοινωνεί καθώς και του Amazon Rekognition Service.",
-			"english": "Android mobile application, part of my postgraduate thesis, built with Kotlin, which captures the user's face while watching a video from YouTube, in order to analyze it and their emotions with the help of the backend that it communicates with as well as the Amazon Rekognition Service."
+			"greek": "Εφαρμογή για Android κινητές συσκευές, μέρος της διπλωματικής μου διατριβής, κατασκευασμένη με Kotlin, που καταγράφει το πρόσωπο του χρήστη κατά τη διάρκεια προβολής βίντεο από το YouTube, με σκοπό την ανάλυση αυτού και εξαγωγή των συναισθημάτων του με τη βοήθεια του backend που επικοινωνεί καθώς και του Amazon Rekognition Service.",
+			"english": "Android mobile application, part of my postgraduate thesis, built with Kotlin, which captures the user's face while they watch a video from YouTube, in order to analyze it and extract their emotions with the help of the backend that it communicates with as well as the Amazon Rekognition Service."
 		},
 		{
 			"greek": "Περισσότερα θα βρείτε στα links.",
