@@ -59,6 +59,7 @@ elementsForTranslation.push(selectEl("#tr-education-8"));
 elementsForTranslation.push(selectEl("#tr-education-9"));
 elementsForTranslation.push(selectEl("#tr-education-10"));
 elementsForTranslation.push(selectEl("#tr-education-11"));
+elementsForTranslation.push(selectEl("#tr-education-12"));
 elementsForTranslation.push(selectEl("#tr-experience-1"));
 elementsForTranslation.push(selectEl("#tr-experience-2"));
 elementsForTranslation.push(selectEl("#tr-experience-3"));
